@@ -77,9 +77,12 @@ body {
   padding: 3px 8px !important;
 }
 
-/* ツールバーのロゴテキストを非表示 */
+/* ツールバーのロゴテキストの表示サイズ調整 */
 .bca-toolbar .bca-toolbar__logo-text {
-  display: none !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100vw / 2);
 }
 .bca-toolbar .bca-toolbar__logo-symbol {
   border: none !important;
