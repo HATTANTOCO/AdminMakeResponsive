@@ -1,6 +1,9 @@
-1.1.4
+1.1.5
 
 // Release Notes //
+
+[2025-11-10] AdminMakeResponsive-1.1.5
+- スマホビューのツールバーで、タイトルロゴを非表示からサイズ調整して表示するようにaddstyle_3rd.cssを修正。
 
 [2024-08-08] AdminMakeResponsive-1.1.4
 - オーバーフローの横方向スクロールを実現するため、mainにwidth:100vw をaddstyle_3rd.cssに設定。#18 
