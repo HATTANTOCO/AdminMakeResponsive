@@ -11,7 +11,10 @@
   max-height: 120px;
 }
 
-/* 意図しないオーバーフローを調整、等（768px以上を意図する） */
+/**
+ * 意図しないオーバーフローを調整、等（768px以上を意図する）
+ * ブラウザの自動調整機能
+ */
 body {
   min-width: initial;
   -webkit-text-size-adjust: 100%;
@@ -20,11 +23,10 @@ body {
   min-height: calc(100vh - 40px) !important;
 }
 
-/* フロント認証等でツールバーを使用する場合（縦中央配置） */
+/* フロント認証等でツールバーを使用する場合の要素レイアウト（縦中央配置） */
 .bca-toolbar .bca-toolbar__logo {
   align-items: center !important;
 }
-
 
 @media screen and (max-width: 768px) {
 /* gridレイアウトをflexレイアウトに変更 */
@@ -77,27 +79,24 @@ body {
   padding: 3px 8px !important;
 }
 
-/* ツールバーのロゴテキストの表示サイズ調整 */
+/* ツールバーのロゴテキストを非表示 */
 .bca-toolbar .bca-toolbar__logo-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: calc(100vw / 2);
-}
-.bca-toolbar .bca-toolbar__logo-symbol {
-  border: none !important;
+  display: none !important;
 }
 
-/* ツールバーのシンボルロゴのマージン調整 */
+/* フロント認証時のツールバーのロゴテキストを表示（bodyタグにid出力をした場合） */
+#membersPage .bca-toolbar .bca-toolbar__logo-text {
+  display: inline !important;
+}
+
+/* ツールバーのシンボルロゴ右の縦ボーダー非表示 */
 .bca-toolbar .bca-toolbar__logo-symbol {
   border: none !important;
-  padding: 0 !important;
-  margin-right: 0 !important;
 }
 
 /* ツールバーのロゴ周りマージン等の調整 */
 .bca-toolbar .bca-toolbar__logo {
-  padding: 0 12px 0 12px !important;
+  padding: 0 0 0 12px !important;
 }
 .bca-toolbar__tools-edit a {
   margin: 8px 0;
