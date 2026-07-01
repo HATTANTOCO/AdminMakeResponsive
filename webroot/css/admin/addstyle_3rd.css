@@ -1,8 +1,15 @@
 @charset "UTF-8";
 /**
- * admin-third管理テーマレスポンシブ対応
- */
-
+ * addcolor_3rd
+ * 
+ * 管理画面用カスタムスタイルCSS
+ * 
+ * @package    AdminMakeResponsive
+ * @subpackage CSS
+ * @author     HATTA (https://hattantoco.com)
+ * @license    MIT License
+ * @link       https://github.com/HATTANTOCO/AdminMakeResponsive
+ * /
 
 /* 意図しないオーバーフローを調整、等（768px以上を意図する） */
 body {
@@ -33,7 +40,7 @@ body {
 
 /* アップローダーパネル、画像のアスペクト比崩れ予防（768px以上を含む） */
 #DivPanelList .selectable-file img{
-	object-fit: cover;
+  object-fit: cover;
 }
 
 /* バルーンチップのウィンドウ幅調整（768px以上を含む） */
@@ -140,7 +147,7 @@ body {
 .bca-current-theme__main {
   width: 100%;
 }
-  
+
 /* CKEditorのダイアログ表示幅を調整 */
 .cke_dialog {
   max-width: 480px !important;
@@ -168,7 +175,7 @@ body {
 }
 
 /* セクションのテーブルをコラム化 */ 
-.bca-form-table tr {
+.form-table.bca-form-table tr{
   display: flex;
   flex-flow: column;
 }
@@ -201,10 +208,34 @@ body {
   font-size:0;
 }
 .bca-toolbar__users > ul > li:nth-child(2) a::before {
-  background-image: url(../../img/admin/icon/sync-solid.svg) !important;
-  width: 12px !important;
-  height: 12px !important;
+  width: 16px !important;
+  height: 16px !important;
+  display: block !important;
+  margin: 0 4px !important;
+  background: #FFFFFF;
+  mask-image: url(../../img/admin/icon/arrows-rotate.svg) !important;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
+
+.bca-toolbar__logo > a span {
+  font-size: 0;
+  background: #2a332c !important;
+  transition: none !important;
+}
+.bca-toolbar__logo > a span::before {
+  content: "";
+  font-size:0;
+  width: 18px !important;
+  height: 18px !important;
+  display: block !important;
+  margin: 0 4px !important;
+  background: #BBBABA;
+  mask-image: url(../../img/admin/icon/house.svg) !important;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
 
 /* ツールバーのロゴテキストの表示サイズ調整 */
 .bca-toolbar .bca-toolbar__logo-text {
@@ -246,11 +277,11 @@ body {
 }
 .bca-toolbar__tools-button-publish a::before,
 .bca-toolbar__tools-edit a::before {
-  background-image: url(../../img/admin/icon/eye-regular.svg) !important;
+  background-image: url(../../img/admin/icon/eye.svg) !important;
   width: 20px !important;
   height: 20px !important;
   background-position: center;
-  background-size: 55%;
+  background-size: 60%;
   background-color: #fff !important;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -291,7 +322,7 @@ body {
   height: 100%;
   display: block;
   position: absolute;
-animation: slide .5s ease;
+  animation: slide .5s ease;
 }
 @keyframes slide {
   0% {
@@ -313,7 +344,7 @@ animation: slide .5s ease;
   opacity: 1;
   font-size: 1.4rem;
   background: #eeeeea;
-animation: slide2 .5s ease;
+  animation: slide2 .5s ease;
   z-index: 3;
 }
 @keyframes slide2 {
@@ -468,11 +499,14 @@ body.open {
 
 /* 一覧リスト周辺のレイアウト調整 */
 .bca-data-list__top {
-  min-width: 600px;
+  min-width: fit-content;
   margin-bottom: 10px !important;
 }
 .bca-data-list__top {
   display: block;
+}
+.bca-table-listup__tbody-td {
+  text-wrap: nowrap;
 }
 .bca-panel-box {
   padding: 20px !important;
@@ -480,7 +514,7 @@ body.open {
 }
 .bca-data-list__bottom {
   display: block;
-  min-width: 600px;
+  min-width: fit-content;
 }
 .bca-pagination {
   text-align: left;
@@ -551,20 +585,20 @@ body.open {
 /* input、textarea等の表示幅調整 */
 .bca-textbox__input,
 .bca-textarea__textarea {
-width: 100% !important;
+  width: 100% !important;
 }
 .bca-form-table[data-bca-table-type=type2] .bca-form-table__input .bca-select,
 .bca-form-table[data-bca-table-type=type2] .bca-form-table__input .bca-textbox,
 .bca-form-table[data-bca-table-type=type2] .bca-form-table__input .bca-textarea {
-margin-left: 0;
+  margin-left: 0;
 }
 .bca-textbox__input,
 .bca-select__select,
 .bca-textarea__textarea {
-margin-left: 0;
+  margin-left: 0;
 }
 .bca-file__delete {
-margin: .5em 0;
+  margin: .5em 0;
 }
 
 /* ラベルのpadding調整 */
@@ -603,7 +637,7 @@ margin: .5em 0;
   border-right: none;
   border-bottom: 1px solid #ccc;
 }
-  .bca-actions__sub {
+.bca-actions__sub {
   margin: 10px 0 0 0;
   padding: 10px 0 0 0;
   border-left: none;
