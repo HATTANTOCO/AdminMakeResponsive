@@ -1,7 +1,15 @@
 @charset "UTF-8";
 /**
- * admin-third管理テーマログイン画面用
- */
+ * addstyle_3rd_toolbar
+ * 
+ * ログイン画面および管理ツールバー用カスタムスタイルCSS
+ * 
+ * @package    AdminMakeResponsive
+ * @subpackage CSS
+ * @author     HATTA (https://hattantoco.com)
+ * @license    MIT License
+ * @link       https://github.com/HATTANTOCO/AdminMakeResponsive
+*/
 
 /* ログイン画面のロゴ幅変更 */
 .bca-login__logo {
@@ -12,9 +20,9 @@
 }
 
 /**
- * 意図しないオーバーフローを調整、等（768px以上を意図する）
- * ブラウザの自動調整機能
- */
+* 意図しないオーバーフローを調整、等（768px以上を意図する）
+* ブラウザの自動調整機能
+*/
 body {
   min-width: initial;
   -webkit-text-size-adjust: 100%;
@@ -70,9 +78,14 @@ body {
   font-size:0;
 }
 .bca-toolbar__users > ul > li:nth-child(2) a::before {
-  background-image: url(../../img/admin/icon/sync-solid.svg) !important;
-  width: 12px !important;
-  height: 12px !important;
+  width: 16px !important;
+  height: 16px !important;
+  display: block !important;
+  margin: 0 4px !important;
+  background: #FFFFFF;
+  mask-image: url(../../img/admin/icon/arrows-rotate.svg) !important;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .bca-toolbar__tools-mode span {
@@ -80,18 +93,51 @@ body {
 }
 
 /* ツールバーのロゴテキストを非表示 */
-.bca-toolbar .bca-toolbar__logo-text {
-  display: none !important;
+.bca-toolbar__logo > a span {
+  font-size: 0;
+  transition: none !important;
 }
 
-/* フロント認証時のツールバーのロゴテキストを表示（bodyタグにid出力をした場合） */
-#membersPage .bca-toolbar .bca-toolbar__logo-text {
-  display: inline !important;
+/* ツールバーのロゴテキストをアイコン化 */
+.bca-toolbar .bca-toolbar__logo-text::before {
+  content: "";
+  font-size:0;
+  width: 18px !important;
+  height: 18px !important;
+  display: block !important;
+  margin: 0 4px !important;
+  background: #BBBABA;
+  mask-image: url(../../img/admin/icon/house.svg) !important;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+/**
+* ツールバーのロゴテキストをフロント認証時はuserアイコンに変更可能とするため
+* toolbar.phpの修正要
+*/
+.bca-toolbar .bca-toolbar__logo-link.logo-front .bca-toolbar__logo-text::before {
+  content: "";
+  font-size:0;
+  width: 18px !important;
+  height: 18px !important;
+  display: block !important;
+  margin: 0 4px !important;
+  background: #BBBABA;
+  mask-image: url(../../img/admin/icon/user.svg) !important;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.bca-toolbar .bca-toolbar__logo-link {
+  width: 40px;
+  overflow: hidden;
 }
 
 /* ツールバーのシンボルロゴ右の縦ボーダー非表示 */
 .bca-toolbar .bca-toolbar__logo-symbol {
   border: none !important;
+  margin-right: 4px !important;
 }
 
 /* ツールバーのロゴ周りマージン等の調整 */
@@ -101,7 +147,7 @@ body {
 .bca-toolbar__tools-edit a {
   margin: 8px 0;
 }
- 
+
 /* ツールバーの「編集する」表示のアイコン化 */
 .bca-toolbar__tools-button a,
 .bca-toolbar__tools-edit a {
@@ -115,11 +161,11 @@ body {
 }
 .bca-toolbar__tools-button-edit a::before,
 .bca-toolbar__tools-edit a::before {
-  background-image: url(../../img/admin/icon/pencil-alt-solid.svg) !important;
+  background-image: url(../../img/admin/icon/pencil.svg) !important;
   width: 20px !important;
   height: 20px !important;
   background-position: center;
-  background-size: 50%;
+  background-size: 55%;
   background-color: #fff !important;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -129,11 +175,11 @@ body {
 }
 .bca-toolbar__tools-button-add a::before,
 .bca-toolbar__tools-add a::before {
-  background-image: url(../../img/admin/icon/plus-circle-solid.svg) !important;
+  background-image: url(../../img/admin/icon/circle-plus.svg) !important;
   width: 20px !important;
   height: 20px !important;
   background-position: center;
-  background-size: 50%;
+  background-size: 55%;
   background-color: #fff !important;
   border-radius: 50%;
   background-repeat: no-repeat;

@@ -1,136 +1,162 @@
 @charset "UTF-8";
-/* v4.5.6時点でのadmin-third管理画面のstyle.cssおよびtoolbar.cssを対象に作成 */
-/* style.cssに対する上書き */
-/* color */
+/**
+ * addcolorconfig
+ * 
+ * 管理画面用カラーカスタムCSS
+ *
+ * @package    AdminMakeResponsive
+ * @subpackage CSS
+ * @author     HATTA (https://hattantoco.com)
+ * @license    MIT License
+ * @link       https://github.com/HATTANTOCO/AdminMakeResponsive
+ */
+
+/* テキストカラー */
 a {
-    }
+    color: #f20071;
+}
 .bca-footer__links__item a:hover {
-    }
+    color: #f20071; 
+}
 .bca-nav__system-list-item:hover {
-    }
+    color: #f20071; 
+}
 .bca-nav-favorite-functions-add {
-    }
+    color: #f20071; 
+}
 .bca-nav-favorite-functions-help {
-    }
+    color: #f20071; 
+}
 .bca-btn-icon {
-	}
+    color: #f20071; 
+}
 tr .bca-table-listup__thead-th--select a {
-    }
+    color: #f20071; 
+}
 tr .bca-table-listup__thead-th--select a .bca-btn-icon-text[data-bca-btn-type=draggable]::before {
-    }
-.bca-login__title {
-    }
+    color: #f20071; 
+}
 .bca-btn[data-bca-btn-category=text] {
-    }
+    color: #f20071; 
+}
 .bca-collapse__btn {
-    }
+    color: #f20071; 
+}
 .bca-current-box a:hover {
-    }
+    color: #f20071; 
+}
 .ui-tabs-panel a {
-    }
+    color: #f20071 !important; 
+}
 .ui-tabs-panel a:hover {
-    }
+    color: #f20071; 
+}
 .jstree-proton-contextmenu li > a i.bca-icon--alias {
-    }
+    color: #f20071; 
+}
 .jstree-proton-contextmenu li > a i.bca-icon--link {
-    }
+    color: #f20071; 
+}
 .ui-dialog .uploader-file-image .url a {
-    }
+    color: #f20071 !important; 
+}
 
-
-/* background-color */
+/* 背景カラー・背景装飾 */
 .bca-footer__sns__link {
-	}
+    background-color: #f20071; 
+}
 .bca-toolbar__users > ul > li.active > ul a:hover {
-    }
-
-
-/* background */
+    background-color: #f20071 !important;
+}
 .bca-btn-icon[data-bca-btn-status=primary] {
-    }
+    background: #f20071; 
+}
 .bca-btn-icon-text[data-bca-btn-status=primary] {
-    }
+    background: #f20071; 
+}
 .bca-table[data-bca-table-type=type2] .bca-currentrow th, .bca-table[data-bca-table-type=type2] .bca-currentrow td {
-    }
+    background: #f20071; 
+}
 .bca-table-listup .bca-currentrow th, .bca-table-listup .bca-currentrow td {
-    }
+    background: #f20071; 
+}
 .bca-btn[data-bca-btn-type=save] {
-	}
+    background: #f20071; 
+}
 .bca-btn[data-bca-btn-type=add] {
-	}
+    background: #f20071; 
+}
 .bca-btn[data-bca-btn-status=primary] {
-	}
+    background: #f20071; 
+}
 .bca-radio__input:checked + label::before {
-    }
+    background: #f20071; 
+}
 .jstree-proton .jstree-container-ul .jstree-node .jstree-wholerow-clicked {
-    }
+    background: #f20071 !important; 
+}
 
-
-/* linear-gradient */
-.bca-btn-icon[data-bca-btn-type=login] {
-    }
-.bca-btn-icon[data-bca-btn-type=login]:hover, .bca-btn-icon[data-bca-btn-type=login]:focus {
-    }
-.bca-btn[data-bca-btn-type=login] {
-    }
-.bca-btn[data-bca-btn-type=login]:hover, .bca-btn[data-bca-btn-type=login]:focus {
-    }
-
- 
-/* border-color */
-/* box-shadow */
+/* ボーダー・ボックスシャドウ（フォーム要素フォーカス時など） */
 .bca-login-form-item .bca-textbox .bca-textbox__input:focus {
-    }
+    border-color: #f20071; 
+}
 .bca-btn:focus, .ui-dialog-buttonset button:focus, .button-small:focus {
-    }
+    box-shadow: 0 0 4px 0px #f20071; 
+}
 .bca-radio__input:focus + label::before {
-    }
+    box-shadow: 0 0 0px 4px #fff inset, 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .bca-checkbox__input:focus + .bca-checkbox-label::before {
-    }
+    box-shadow: 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .bca-checkbox__input:focus + label::before {
-    }
+    box-shadow: 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .bca-checkbox__input + label::after, .bca-checkbox__label::after {
-    }
+    border-right: 0.24em solid #f20071; border-bottom: 0.24em solid #f20071; 
+}
 .bca-select__select:focus {
-    }
+    box-shadow: 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .bca-textbox-color__input:focus {
-    }
+    box-shadow: 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .bca-textbox__input:focus {
-    }
+    box-shadow: 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .bca-textarea__textarea:focus {
-    }
+    box-shadow: 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .bca-file__delete-input:focus + .bca-file__delete-label::before {
-    }
+    box-shadow: 0 0 4px 0px #f20071; 
+}
 .bca-file__delete-input + label::after, .bca-file__delete-label::after {
-    }
+    border-right: 0.24em solid #f20071; border-bottom: 0.24em solid #f20071; 
+}
 .bca-datetimepicker__date-input:focus, .bca-datetimepicker__time-input:focus {
-    }
+    box-shadow: 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .bca-current-theme {
-    }
+    border: 3px solid #f20071; 
+}
 .ui-widget input[type="email"]:focus {
-    }
+    box-shadow: 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .ui-button:focus {
-    }
+    box-shadow: 0 0 4px 0px #f20071 !important; 
+}
 .cke_dialog .cke_dialog_ui_radio_input:checked + label::before {
-    }
+    background: #f20071; box-shadow: 0 0 0px 4px #fff inset; 
+}
 .cke_dialog .cke_dialog_ui_radio_input:focus + label::before {
-    }
+    box-shadow: 0 0 0px 4px #fff inset, 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .cke_dialog select.cke_dialog_ui_input_select:focus {
-    }
+    box-shadow: 0 0 4px 0px #f20071; border-color: #f20071; 
+}
 .cke_dialog textarea.cke_dialog_ui_input_textarea:focus {
-    }
+    box-shadow: 0 0 4px 0px #f20071; border-color: #f20071 !important; 
+}
 .cke_dialog .bca-btn:focus {
-    }
-
-
-.bca-btn-icon[data-bca-btn-type=login] {
-    }
-.bca-btn-icon-text[data-bca-btn-type=login] {
-    }
-.bca-btn[data-bca-btn-type=login] {
-    }
-
-
-/* toolbar.cssに対する上書き */
-.bca-toolbar__users > ul > li.active > ul a:hover {
-    }
+    box-shadow: 0 0 4px 0px #f20071; 
+}

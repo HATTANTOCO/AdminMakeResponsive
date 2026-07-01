@@ -1,4 +1,4 @@
-# baserCMS 4系 管理画面 レスポンシブ化 プラグイン
+# 管理画面レスポンシブ化 プラグイン for baserCMS 4 
 baserCMSのadmin-third、admin-secondの両テーマ共にレスポンシブ化するプラグインです。
 （admin-secondは、Daruma&Namio(tsukurun)さん作成の「adminGoResponsiveプラグイン」のcssおよびjsを利用させていただきました。）
 
@@ -46,7 +46,7 @@ admin-third管理テーマについては、基本的にデフォルトのstyle.
 
 
 ## ライセンス
-Copyright (c) 2022 GUSSAN(beedan)
+Copyright (c) 2022 HATTA (https://hattantoco.com)
 Released under the MIT license
 https://opensource.org/licenses/mit-license.php
 

@@ -1,50 +1,56 @@
-@charset "UTF-8";
-/* v4.5.6時点でのadmin-third管理画面のstyle.cssおよびtoolbar.cssを対象に作成 */
-/* toolbar.cssに対する上書き */
+@charset "utf-8";
+/**
+ * addcolorconfig_toolbar
+ * 
+ * ログイン画面および管理ツールバー用カラーカスタムCSS
+ *
+ * @package    AdminMakeResponsive
+ * @subpackage CSS
+ * @author     HATTA (https://hattantoco.com)
+ * @license    MIT License
+ * @link       https://github.com/HATTANTOCO/AdminMakeResponsive
+ */
+
+/* 管理ツールバー */
 .bca-toolbar__users > ul > li.active > ul a:hover {
     background-color: ADMINMAIN !important; 
-    }
+}
 
-
-/* style.cssに対する上書き */
-/* ログイン画面 */
-/* color */
+/* ログイン画面 - テキストカラー */
 .bca-login__title {
     color: ADMINMAIN; 
-    }
+}
 .bca-login-forgot-pass a {
     color: ADMINMAIN; 
-    }
+}
     
-/* linear-gradient */
+/* ログイン画面 - ボタン背景（グラデーション） */
 .bca-btn-icon[data-bca-btn-type=login] {
     background-image: linear-gradient(ADMINMAIN 10%, ADMINSUB 100%); 
-    }
+}
 .bca-btn-icon[data-bca-btn-type=login]:hover, .bca-btn-icon[data-bca-btn-type=login]:focus {
     background-image: linear-gradient(ADMINSUB 10%, ADMINSUB 100%); 
-    }
+}
 .bca-btn[data-bca-btn-type=login] {
     background-image: linear-gradient(ADMINMAIN 10%, ADMINSUB 100%); 
-    }
+}
 .bca-btn[data-bca-btn-type=login]:hover, .bca-btn[data-bca-btn-type=login]:focus {
     background-image: linear-gradient(ADMINSUB 10%, ADMINSUB 100%); 
-    }
+}
     
-/* border-color */
-/* box-shadow */
+/* ログイン画面 - フォーム・ボタン（ボーダー、シャドウ） */
 .bca-login-form-item .bca-textbox .bca-textbox__input:focus {
     border-color: ADMINMAIN; 
-    }
+}
 .bca-btn:focus, .ui-dialog-buttonset button:focus, .button-small:focus {
     box-shadow: 0 0 4px 0px ADMINMAIN; 
-    }
-
+}
 .bca-btn-icon[data-bca-btn-type=login] {
     border: 1px solid ADMINSUB; 
-    }
+}
 .bca-btn-icon-text[data-bca-btn-type=login] {
     border: 1px solid ADMINSUB; 
-    }
+}
 .bca-btn[data-bca-btn-type=login] {
     border: 1px solid ADMINSUB; 
-    }
+}

@@ -1,4 +1,16 @@
 <?php 
+/**
+ * alter_admin_make_responsives
+ * 
+ * AdminMakeResponsive スキーマ
+ * 
+ * @package    AdminMakeResponsive
+ * @subpackage Schema
+ * @author     HATTA (https://hattantoco.com)
+ * @license    MIT License
+ * @link       https://github.com/HATTANTOCO/AdminMakeResponsive
+ */
+
 class AdminMakeResponsivesSchema extends CakeSchema {
 
 	public $file = 'admin_make_responsives.php';
